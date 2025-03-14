@@ -833,4 +833,986 @@
         }
 
         .faq-item:hover {
-            box-shadow:
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .faq-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-toggle.active {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            display: none;
+            color: var(--light-text-color);
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Контакты */
+        .contact {
+            padding: 6rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .contact-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(37, 99, 235, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 1rem;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-text p {
+            color: var(--light-text-color);
+            margin-bottom: 0;
+        }
+
+        .contact-form {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            padding: 6rem 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            background-color: white;
+            color: var(--primary-color);
+            font-weight: 700;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            color: var(--secondary-color);
+        }
+
+        .cta-pattern {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Футер */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 5rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-about h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-about p {
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: #334155;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 2rem;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 1024px) {
+            .features-grid, .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content, .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .hero-btns {
+                justify-content: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .steps::after {
+                display: none;
+            }
+            
+            .step {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .step:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .step-number {
+                position: relative;
+                left: auto;
+                transform: none;
+                margin-bottom: 1rem;
+            }
+            
+            .step-content {
+                width: 100%;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            
+            .step:nth-child(even) .step-content {
+                text-align: center;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.popular {
+                transform: scale(1);
+                margin: 2rem 0;
+            }
+            
+            .pricing-card.popular:hover {
+                transform: translateY(-10px);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                padding: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 1rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="9" y1="3" x2="9" y2="21"></line>
+                        <path d="M13 8l4 4-4 4"></path>
+                    </svg>
+                    <span>Цифровой</span> Наследник
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#about">О сервисе</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#features">Функции</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Войти</button>
+                <button class="mobile-menu-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fadeIn">
+                    <h1>Сохраните ваше цифровое наследие для близких</h1>
+                    <p>Помогаем безопасно передать доступ к вашим цифровым активам вашим наследникам в случае смерти.</p>
+                    <div class="hero-btns">
+                        <a href="#pricing" class="btn btn-large animate-pulse">Создать завещание</a>
+                        <a href="#how-it-works" class="btn btn-outline btn-large">Как это работает</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fadeIn">
+                    <img src="https://via.placeholder.com/600x400" alt="Цифровой наследник">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stats-item">
+                    <span class="stats-number">70+</span>
+                    <p class="stats-text">Аккаунтов у среднего пользователя</p>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">93%</span>
+                    <p class="stats-text">Семей теряют доступ к цифровым активам умерших</p>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">6+</span>
+                    <p class="stats-text">Месяцев на восстановление доступа</p>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">50%</span>
+                    <p class="stats-text">Цифровых воспоминаний теряются навсегда</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О сервисе -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x400" alt="О сервисе">
+                    <div class="about-card">
+                        <h4>1000+</h4>
+                        <p>Семей уже обеспечили сохранность своего цифрового наследия</p>
+                    </div>
+                </div>
+                <div class="about-text animate-slideUp">
+                    <h2 class="section-title">О сервисе "Цифровой наследник"</h2>
+                    <p class="section-subtitle">Мы помогаем сохранить и передать ваши цифровые активы вашим близким в случае вашей смерти.</p>
+                    <p>Ваши пароли, фотографии, видео, документы, криптовалюты и другие цифровые активы имеют огромную ценность. Но что произойдет с ними, если вас не станет?</p>
+                    <ul class="about-list">
+                        <li>Защита всех ваших цифровых активов</li>
+                        <li>Передача доступа только доверенным лицам</li>
+                        <li>Юридическая поддержка процесса</li>
+                        <li>Шифрование военного уровня</li>
+                        <li>Полная конфиденциальность</li>
+                    </ul>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title text-center">Как это работает</h2>
+            <p class="section-subtitle text-center">Пять простых шагов для защиты вашего цифрового наследия</p>
+            <div class="steps">
+                <div class="step animate-slideUp">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Регистрация и настройка</h3>
+                        <p>Создайте защищенный аккаунт и выберите, какие данные вы хотите передать наследникам: аккаунты социальных сетей, банковские приложения, криптокошельки и другие цифровые активы.</p>
+                    </div>
+                </div>
+                <div class="step animate-slideUp delay-200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Защита данных</h3>
+                        <p>Вся информация шифруется по военным стандартам (AES-256) и хранится в защищенном облаке. Только вы и ваши наследники после выполнения всех условий смогут получить к ней доступ.</p>
+                    </div>
+                </div>
+                <div class="step animate-slideUp delay-400">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Выбор наследников</h3>
+                        <p>Укажите, кому и какие именно данные следует передать в случае вашей смерти. Вы можете назначить разных наследников для разных типов данных.</p>
+                    </div>
+                </div>
+                <div class="step animate-slideUp delay-600">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Юридическая защита</h3>
+                        <p>Настройте процесс верификации через нотариуса или медицинское свидетельство. Это гарантирует, что только законные наследники получат доступ к вашим данным.</p>
+                    </div>
+                </div>
+                <div class="step animate-slideUp delay-800">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Спокойствие и уверенность</h3>
+                        <p>Живите спокойно, зная, что ваши цифровые активы надежно защищены и будут переданы именно тем, кому вы доверяете.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Функции -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title text-center">Наши функции</h2>
+            <p class="section-subtitle text-center">Мы предлагаем полный комплекс услуг для защиты и передачи ваших цифровых активов</p>
+            <div class="features-grid">
+                <div class="feature-card animate-slideUp">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <path d="M13 8l4 4-4 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Управление аккаунтами</h3>
+                    <p class="feature-description">Централизованное хранение и управление всеми вашими цифровыми аккаунтами в одном месте.</p>
+                </div>
+                <div class="feature-card animate-slideUp delay-200">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Военное шифрование</h3>
+                    <p class="feature-description">Максимальная защита ваших данных с использованием алгоритма AES-256 и многослойного шифрования.</p>
+                </div>
+                <div class="feature-card animate-slideUp delay-400">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Автоматическая передача</h3>
+                    <p class="feature-description">Продуманная система автоматической передачи доступа наследникам после подтверждения.</p>
+                </div>
+                <div class="feature-card animate-slideUp delay-600">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Гибкий выбор наследников</h3>
+                    <p class="feature-description">Возможность назначить разных наследников для разных типов данных и активов.</p>
+                </div>
+                <div class="feature-card animate-slideUp delay-800">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Юридическая поддержка</h3>
+                    <p class="feature-description">Интеграция с нотариальными службами для обеспечения юридической силы передачи данных.</p>
+                </div>
+                <div class="feature-card animate-slideUp delay-1000">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Поддержка 24/7</h3>
+                    <p class="feature-description">Круглосуточная поддержка для вас и ваших наследников при возникновении любых вопросов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title text-center">Наши тарифы</h2>
+            <p class="section-subtitle text-center">Выберите план, который подходит именно вам</p>
+            <div class="pricing-switch">
+                <span>Ежемесячно</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span>Ежегодно <small>(экономия 20%)</small></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-slideUp">
+                    <h3 class="pricing-title">Базовый</h3>
+                    <div class="pricing-price">
+                        5 000 ₽
+                        <span class="pricing-period">единоразово</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Настройка цифрового завещания</li>
+                        <li>До 10 аккаунтов</li>
+                        <li>Базовое шифрование</li>
+                        <li>Техподдержка</li>
+                        <li>Один наследник</li>
+                    </ul>
+                    <a href="#" class="btn pricing-btn">Выбрать план</a>
+                </div>
+                <div class="pricing-card popular animate-slideUp delay-200">
+                    <div class="popular-badge">Популярный</div>
+                    <h3 class="pricing-title">Стандарт</h3>
+                    <div class="pricing-price">
+                        8 000 ₽
+                        <span class="pricing-period">+ 1 000 ₽/год</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Настройка цифрового завещания</li>
+                        <li>До 30 аккаунтов</li>
+                        <li>Расширенное шифрование</li>
+                        <li>Приоритетная поддержка</li>
+                        <li>До 3 наследников</li>
+                        <li>Ежегодное обновление данных</li>
+                        <li>Базовая юридическая поддержка</li>
+                    </ul>
+                    <a href="#" class="btn pricing-btn">Выбрать план</a>
+                </div>
+                <div class="pricing-card animate-slideUp delay-400">
+                    <h3 class="pricing-title">Премиум</h3>
+                    <div class="pricing-price">
+                        10 000 ₽
+                        <span class="pricing-period">+ 2 000 ₽/год</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Настройка цифрового завещания</li>
+                        <li>Неограниченное количество аккаунтов</li>
+                        <li>Максимальная защита</li>
+                        <li>Полное юридическое сопровождение</li>
+                        <li>VIP-поддержка 24/7</li>
+                        <li>Неограниченное число наследников</li>
+                        <li>Ежеквартальное обновление данных</li>
+                        <li>Консультации по цифровой безопасности</li>
+                    </ul>
+                    <a href="#" class="btn pricing-btn">Выбрать план</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Что говорят наши клиенты</h2>
+            <p class="section-subtitle text-center">Мнения людей, которые уже позаботились о своем цифровом наследии</p>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-avatar">
+                        <img src="https://via.placeholder.com/80x80" alt="Алексей">
+                    </div>
+                    <p class="testimonial-text">"После смерти отца мы потеряли доступ ко всем его фотографиям и документам. Жаль, что тогда не существовало "Цифрового наследника". Теперь я сам пользуюсь этим сервисом, чтобы мои дети не столкнулись с такой же проблемой."</p>
+                    <div class="testimonial-author">Алексей Петров</div>
+                    <div class="testimonial-position">Инженер, 42 года</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <img src="https://via.placeholder.com/80x80" alt="Елена">
+                    </div>
+                    <p class="testimonial-text">"Сервис дал мне уверенность, что мои близкие смогут получить доступ к моим финансам и личным архивам. Особенно важно для меня, что можно гибко настроить, кому и какая информация будет доступна."</p>
+                    <div class="testimonial-author">Елена Соколова</div>
+                    <div class="testimonial-position">Предприниматель, 38 лет</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <img src="https://via.placeholder.com/80x80" alt="Михаил">
+                    </div>
+                    <p class="testimonial-text">"Как владелец криптокошельков, я всегда беспокоился о том, что случится с моими активами. Теперь я спокоен - моя семья сможет получить все необходимые ключи и инструкции. Система шифрования на высоте!"</p>
+                    <div class="testimonial-author">Михаил Волков</div>
+                    <div class="testimonial-position">Инвестор, 45 лет</div>
+                </div>
+                <div class="testimonial-controls">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title text-center">Часто задаваемые вопросы</h2>
+            <p class="section-subtitle text-center">Ответы на популярные вопросы о нашем сервисе</p>
+            <div class="faq-grid">
+                <div class="faq-item animate-slideUp">
+                    <div class="faq-question">
+                        Насколько это безопасно?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        Мы используем многоуровневую систему защиты данных, включающую шифрование военного уровня AES-256. Информация хранится в зашифрованном виде и доступна только вам и вашим наследникам после выполнения всех условий передачи.
+                    </div>
+                </div>
+                <div class="faq-item animate-slideUp delay-200">
+                    <div class="faq-question">
+                        Как подтверждается факт смерти?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        Через официальные документы: свидетельство о смерти или заверенные нотариусом документы. Мы сотрудничаем с нотариальными конторами по всей России для обеспечения юридической чистоты процесса.
+                    </div>
+                </div>
+                <div class="faq-item animate-slideUp delay-400">
+                    <div class="faq-question">
+                        Что происходит с моими данными в случае закрытия сервиса?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        У нас предусмотрен "протокол вечности" — ваши данные будут переданы партнерской организации, которая продолжит обслуживание ваших цифровых завещаний. Кроме того, вы можете запросить экспорт ваших данных в любое время.
+                    </div>
+                </div>
+                <div class="faq-item animate-slideUp delay-600">
+                    <div class="faq-question">
+                        Можно ли изменить список наследников?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        Да, вы можете обновлять список наследников и передаваемые данные в любое время. Изменения вступают в силу сразу после сохранения и подтверждения через двухфакторную аутентификацию.
+                    </div>
+                </div>
+                <div class="faq-item animate-slideUp delay-800">
+                    <div class="faq-question">
+                        Есть ли у вас мобильное приложение?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        Да, мы предлагаем мобильные приложения для iOS и Android. Через них вы можете управлять своими данными, добавлять новые аккаунты и редактировать настройки наследования.
+                    </div>
+                </div>
+                <div class="faq-item animate-slideUp delay-1000">
+                    <div class="faq-question">
+                        Как быстро наследники получат доступ к данным?
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        После подтверждения факта смерти и проверки всех необходимых документов, процесс передачи данных занимает от 1 до 3 рабочих дней в зависимости от выбранного тарифа.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Свяжитесь с нами</h2>
+            <p class="section-subtitle text-center">Получите консультацию или задайте вопрос</p>
+            <div class="contact-grid">
+                <div class="contact-info animate-slideUp">
+                    <h3>Наши контакты</h3>
+                    <p>Мы всегда готовы ответить на ваши вопросы и помочь с настройкой сервиса</p>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 2L11 13"></path>
+                                    <path d="M22 2L15 22 11 13 2 9 22 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>support@digitalheir.ru</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Telegram</h4>
+                                <p>@DigitalHeirSupport</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Адрес</h4>
+                                <p>Москва, ул. Ленина, д. 10</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form animate-slideUp delay-200">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="ivan@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Сообщение</label>
+                            <textarea id="message" class="form-control form-textarea" placeholder="Ваш вопрос или сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-large">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-pattern"></div>
+        <div class="container">
+            <h2>Защитите свое цифровое наследие уже сегодня</h2>
+            <p>Создайте цифровое завещание за 5 минут и будьте уверены в будущем своих данных</p>
+            <a href="#pricing" class="cta-btn animate-pulse">Начать сейчас</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Цифровой Наследник</h3>
+                    <p>Сервис для сохранения и передачи вашего цифрового наследия вашим близким.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Сервис</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#features">Функции</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Связаться</h3>
+                    <ul>
+                        <li><a href="mailto:support@digitalheir.ru">support@digitalheir.ru</a></li>
+                        <li><a href="tel:+78005553535">8 (800) 555-35-35</a></li>
+                        <li><a href="#">@DigitalHeirSupport</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Цифровой Наследник. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Слайдер отзывов
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.classList.toggle('active', i === index);
+                dots[i].classList.toggle('active', i === index);
+            });
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                showTestimonial(currentTestimonial);
+            });
+        });
+
+        // Автоматическая смена отзывов
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // FAQ аккордеон
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const toggle = item.querySelector('.faq-toggle');
+            const answer = item.querySelector('.faq-answer');
+            
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+
+        // Анимация при прокрутке
+        const animateElements = document.querySelectorAll('.animate-slideUp');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.2 });
+
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
